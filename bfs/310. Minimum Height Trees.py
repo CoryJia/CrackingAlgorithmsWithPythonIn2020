@@ -7,8 +7,8 @@ class Solution:
         graph = [set() for _ in range(n)]
 
         for u, v in edges:
-            graph[u].add(v);
-            graph[v].add(u);
+            graph[u].add(v)
+            graph[v].add(u)
 
         leaves = [x for x in range(n) if len(graph[x]) <= 1]
         pre_leaves = leaves
